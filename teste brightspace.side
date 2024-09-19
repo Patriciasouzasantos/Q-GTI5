@@ -1,0 +1,74 @@
+{
+  "id": "7b180d17-e1f8-48d7-9578-a6684209b8e1",
+  "version": "2.0",
+  "name": "teste brightspace",
+  "url": "https://fecaf.brightspace.com",
+  "tests": [{
+    "id": "2ece6d69-e5d1-42d4-9226-def584a443b9",
+    "name": "teste bright",
+    "commands": [{
+      "id": "891c8bf6-2366-4b44-b8a8-f6aa28ad485d",
+      "comment": "",
+      "command": "open",
+      "target": "/d2l/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26557d3d-5548-4be5-81d7-2ba18cd5ba6f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x865",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d8ae2af-d834-409c-b7f4-3fe31a64359e",
+      "comment": "",
+      "command": "type",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=userName", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//form[@id='formId']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "43043"
+    }, {
+      "id": "75489f18-1533-42f4-942b-ea2d82b7b9ef",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='formId']/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "13041990"
+    }, {
+      "id": "5b2a9d70-9dc2-48a0-92f0-363abcd50809",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d2l-navigation-main-ib-list > .d2l-navigation-ib-item:nth-child(5) .d2l-navigation-ib-item-link-text",
+      "targets": [
+        ["css=.d2l-navigation-main-ib-list > .d2l-navigation-ib-item:nth-child(5) .d2l-navigation-ib-item-link-text", "css:finder"],
+        ["xpath=//div[5]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Entrega de Documentos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1f840c5f-c5b1-4fac-bb4d-905857d30d14",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2ece6d69-e5d1-42d4-9226-def584a443b9"]
+  }],
+  "urls": ["https://fecaf.brightspace.com/"],
+  "plugins": []
+}
